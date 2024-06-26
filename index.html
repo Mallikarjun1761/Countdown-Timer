@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallikarjun Countdown Timer</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+<div class="container">
+    <h2>Countdown Timer</h2>
+
+    <div class="input-container">
+        <label for="hoursInput">Hours:</label>
+        <input type="number" id="hoursInput" min="0">
+    </div>
+
+    <div class="input-container">
+        <label for="minutesInput">Minutes:</label>
+        <input type="number" id="minutesInput" min="0">
+    </div>
+
+    <div class="input-container">
+        <label for="secondsInput">Seconds:</label>
+        <input type="number" id="secondsInput" min="0">
+    </div>
+
+    <div class="btn-container">
+        <button class="button "  id="startButton" onclick="startTimer()">Start</button>
+        <button class="button "   onclick="pauseTimer()">Pause</button>
+        <button class="button "    onclick="resumeTimer()">Resume</button>
+    </div>
+
+    <div id="timer">00:00:00</div>
+    <div id="finishedMsg" class="finished-msg" style="display: none;">Time's up! Hope you had a productive session!</div>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
